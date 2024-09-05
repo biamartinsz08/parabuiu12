@@ -1,0 +1,79 @@
+/* Reset básico para garantir uma aparência consistente */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2.9;
+}
+
+header {
+    background: #0d2e86;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    padding: 0 20px;
+    float: right;
+}
+
+nav {
+    float: right;
+    padding: 20 20px;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu .bar {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5PX 0;
+}
+
+/* Estilos para o menu cascata em dispositivos menores */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    color: #fff;
+    text-align: right;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
